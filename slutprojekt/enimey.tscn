@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvj0jx0beiuuv"]
+
+[ext_resource type="Script" path="res://enimey.gd" id="1_6juqq"]
+[ext_resource type="Texture2D" uid="uid://c5k1gfm8fh6xx" path="res://Filips_Bold.png" id="2_tjrg7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iin7e"]
+
+[node name="enimey" type="CharacterBody2D"]
+script = ExtResource("1_6juqq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_tjrg7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_iin7e")
