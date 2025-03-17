@@ -4,12 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://c5k1gfm8fh6xx" path="res://Filips_Bold.png" id="2_tjrg7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_iin7e"]
+radius = 90.0056
 
 [node name="enimey" type="CharacterBody2D"]
 script = ExtResource("1_6juqq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 1, 1)
+position = Vector2(1.00001, 1.52588e-05)
+scale = Vector2(0.5025, 0.505)
 texture = ExtResource("2_tjrg7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 1)
 shape = SubResource("CircleShape2D_iin7e")
