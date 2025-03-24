@@ -31,4 +31,9 @@ func _process(delta: float) -> void:
 		bullet_instance.rotation_degrees = rotation_degrees
 		bullet_instance.position = $Bullet_point.get_global_position()
 		get_tree().get_root().add_child(bullet_instance)
-		
+		can_fire = false
+		$FireRate.start(0.5)
+
+
+func _on_timer_timeout() -> void:
+	can_fire = true
